@@ -17,5 +17,13 @@
   "dependencies": {
     "esbuild": "^0.28.1",
     "undici-types": "^8.3.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juhs1088-ui/Back-end.git"
+  },
+  "bugs": {
+    "url": "https://github.com/juhs1088-ui/Back-end/issues"
+  },
+  "homepage": "https://github.com/juhs1088-ui/Back-end#readme"
 }
