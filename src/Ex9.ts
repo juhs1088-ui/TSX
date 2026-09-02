@@ -1,3 +1,5 @@
+import { ping } from "undici-types";
+
 export class Animal {
 
     private nome: string = "";
@@ -64,6 +66,13 @@ cabra.setEspecie("Cabra");
 cabra.setIdade(3);
 cabra.setPeso(60);
 
+const cachorro = new Animal();
+
+cachorro.setNome("Torresmo");
+cachorro.setEspecie("Cachorro");
+cachorro.setIdade(5);
+cachorro.setPeso(10);
+
 
 const coelho = new Animal();
 
@@ -72,6 +81,12 @@ coelho.setEspecie("Coelho");
 coelho.setIdade(2);
 coelho.setPeso(2);
 
+const Pintinho = new Animal();
+
+Pintinho.setNome("Pir");
+Pintinho.setEspecie("Pinto");
+Pintinho.setIdade(1);
+Pintinho.setPeso(500);
 
 const galinha = new Animal();
 
@@ -103,6 +118,11 @@ console.log("Espécie:", cabra.getEspecie());
 console.log("Idade:", cabra.getIdade());
 console.log("Peso:", cabra.getPeso(), "kg");
 
+console.log("\nCachorro");
+console.log("Nome:", cachorro.getNome());
+console.log("Espécie:", cachorro.getEspecie());
+console.log("Idade:", cabra.getIdade());
+console.log("Peso:", cachorro.getPeso(), "kg");
 
 console.log("\nCOELHO");
 console.log("Nome:", coelho.getNome());
@@ -110,6 +130,11 @@ console.log("Espécie:", coelho.getEspecie());
 console.log("Idade:", coelho.getIdade());
 console.log("Peso:", coelho.getPeso(), "kg");
 
+console.log("\nPinto");
+console.log("Nome:", Pintinho.getNome());
+console.log("Espécie:", Pintinho.getEspecie());
+console.log("Idade:", Pintinho.getIdade());
+console.log("Peso:", Pintinho.getPeso(), "g");
 
 console.log("\nGALINHA");
 console.log("Nome:", galinha.getNome());
