@@ -4,6 +4,8 @@ export class Pessoa{
     private idade: number = 0;
     private endereco: string = "";
     private profissao: string= "";
+    private rg: number =0;
+    private cpf: number =0;
 
     setNome(nome: string): void {
         this.nome = nome;
@@ -28,6 +30,19 @@ export class Pessoa{
 }
     getProfissao(): string {
             return this.profissao;
+    }
+    setRG(rg: number): void{
+        this.rg= rg
+}
+    getRG(): number{
+             return this.rg;
+}
+     setCPF(cpf: number): void{
+         this.cpf =cpf;
+     }
+
+    getCPF(): number{
+        return this.cpf;
 }
 
 }
